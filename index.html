@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusFlow — Streamline Your Team's Workflow</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         1. Header & Responsive Navigation Bar
+         ====================================================================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo" aria-label="NexusFlow Home">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <span>NexusFlow</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-links">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#metrics" class="nav-link">Impact</a></li>
+                    <li><a href="#cta" class="nav-link">Pricing</a></li>
+                    <li><a href="#footer" class="nav-link">Resources</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop CTA Buttons -->
+            <div class="nav-actions">
+                <button type="button" class="btn btn-secondary" data-modal-title="Sign In">Log in</button>
+                <button type="button" class="btn btn-primary" data-modal-title="Start Free Trial">Get Started</button>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Drawer -->
+        <div class="mobile-nav-drawer" id="mobileNavDrawer">
+            <ul class="mobile-nav-links">
+                <li><a href="#features" class="mobile-nav-item">Features</a></li>
+                <li><a href="#metrics" class="mobile-nav-item">Impact</a></li>
+                <li><a href="#cta" class="mobile-nav-item">Pricing</a></li>
+                <li><a href="#footer" class="mobile-nav-item">Resources</a></li>
+            </ul>
+            <div class="mobile-nav-actions">
+                <button type="button" class="btn btn-secondary" data-modal-title="Sign In">Log in</button>
+                <button type="button" class="btn btn-primary" data-modal-title="Start Free Trial">Get Started Free</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         2. Main Content Area
+         ====================================================================== -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <!-- Left Column: Copy & CTAs -->
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        <span>NexusFlow 2.4 is now live</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Ship projects faster with <span>intelligent</span> workflows.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Unite your tasks, docs, and team communication in one lightning-fast workspace designed to eliminate busywork and keep everyone aligned.
+                    </p>
+                    <div class="hero-cta-group">
+                        <button type="button" class="btn btn-primary" data-modal-title="Start Your 14-Day Free Trial">
+                            Start Free Trial
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                        <a href="#features" class="btn btn-secondary">
+                            Explore Features
+                        </a>
+                    </div>
+                    <div class="hero-social-proof">
+                        <div class="avatar-stack" aria-hidden="true">
+                            <div class="avatar-circle avatar-circle--indigo">AK</div>
+                            <div class="avatar-circle avatar-circle--sky">MR</div>
+                            <div class="avatar-circle avatar-circle--green">SL</div>
+                            <div class="avatar-circle avatar-circle--amber">JD</div>
+                        </div>
+                        <span>Trusted by <strong>12,000+</strong> modern product teams</span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Product UI Mockup -->
+                <div class="hero-visual">
+                    <div class="mockup-window" role="img" aria-label="NexusFlow Dashboard Preview">
+                        <div class="mockup-topbar">
+                            <div class="window-dots">
+                                <span class="window-dot window-dot--red"></span>
+                                <span class="window-dot window-dot--amber"></span>
+                                <span class="window-dot window-dot--green"></span>
+                            </div>
+                            <div class="mockup-url-bar">app.nexusflow.io/workspace</div>
+                            <div class="mockup-topbar-spacer"></div>
+                        </div>
+                        <div class="mockup-body">
+                            <!-- Mini Analytics Cards -->
+                            <div class="mockup-stats-row">
+                                <div class="stat-card">
+                                    <div class="stat-label">Sprint Velocity</div>
+                                    <div class="stat-value">94.2%</div>
+                                    <div class="stat-trend">+12.4% vs last wk</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-label">Tasks Completed</div>
+                                    <div class="stat-value">148</div>
+                                    <div class="stat-trend">On schedule</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-label">Time Saved</div>
+                                    <div class="stat-value">18.5h</div>
+                                    <div class="stat-trend">Automated</div>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Task Preview -->
+                            <div class="mockup-task-list">
+                                <div class="task-item">
+                                    <div class="task-left">
+                                        <span class="task-check done">✓</span>
+                                        <span>Finalize Q4 Product Roadmap</span>
+                                    </div>
+                                    <span class="task-tag task-tag--completed">Completed</span>
+                                </div>
+                                <div class="task-item">
+                                    <div class="task-left">
+                                        <span class="task-check done">✓</span>
+                                        <span>Design System Token Sync</span>
+                                    </div>
+                                    <span class="task-tag task-tag--design">Design</span>
+                                </div>
+                                <div class="task-item">
+                                    <div class="task-left">
+                                        <span class="task-check"></span>
+                                        <span>Automated API Webhook Triggers</span>
+                                    </div>
+                                    <span class="task-tag task-tag--in-progress">In Progress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Logos -->
+        <section class="logos-section" aria-label="Trusted Companies">
+            <div class="container">
+                <p class="logos-title">Powering high-velocity teams at</p>
+                <div class="logos-flex">
+                    <div class="company-logo">▲ VERCELIA</div>
+                    <div class="company-logo">◆ STRATOSPHERE</div>
+                    <div class="company-logo">● ORBITAL</div>
+                    <div class="company-logo">■ KINETIC</div>
+                    <div class="company-logo">✦ LUMINA</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features / Benefits Section (CSS Grid) -->
+        <section class="features-section section-padding" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Why NexusFlow</span>
+                    <h2 class="section-title">Everything your team needs to stay in flow</h2>
+                    <p class="section-description">
+                        Replace fragmented tools with a unified platform built for speed, clarity, and effortless collaboration across every device.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <article class="feature-card">
+                        <div class="feature-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Automated Workflows</h3>
+                        <p class="feature-text">
+                            Create custom no-code triggers that assign tasks, update statuses, and notify stakeholders automatically.
+                        </p>
+                    </article>
+
+                    <!-- Feature 2 -->
+                    <article class="feature-card">
+                        <div class="feature-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Real-Time Collaboration</h3>
+                        <p class="feature-text">
+                            Co-edit project specs, leave contextual inline comments, and see live cursors with zero latency.
+                        </p>
+                    </article>
+
+                    <!-- Feature 3 -->
+                    <article class="feature-card">
+                        <div class="feature-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Actionable Analytics</h3>
+                        <p class="feature-text">
+                            Spot bottlenecks early with visual sprint burndowns, workload heatmaps, and automated weekly digests.
+                        </p>
+                    </article>
+
+                    <!-- Feature 4 -->
+                    <article class="feature-card">
+                        <div class="feature-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Enterprise-Grade Security</h3>
+                        <p class="feature-text">
+                            SOC 2 Type II certified with end-to-end encryption, SSO/SAML authentication, and granular role permissions.
+                        </p>
+                    </article>
+
+                    <!-- Feature 5 -->
+                    <article class="feature-card">
+                        <div class="feature-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Cross-Device Sync</h3>
+                        <p class="feature-text">
+                            Pick up right where you left off across desktop, tablet, and mobile with instant offline-first synchronization.
+                        </p>
+                    </article>
+
+                    <!-- Feature 6 -->
+                    <article class="feature-card">
+                        <div class="feature-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">100+ Native Integrations</h3>
+                        <p class="feature-text">
+                            Connect seamlessly with GitHub, Slack, Figma, Google Workspace, and Jira in just two clicks.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics / Impact Section -->
+        <section class="metrics-section section-padding" id="metrics">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div>
+                        <div class="metric-number">99.99%</div>
+                        <div class="metric-label">Guaranteed Uptime SLA</div>
+                    </div>
+                    <div>
+                        <div class="metric-number">42%</div>
+                        <div class="metric-label">Faster Project Delivery</div>
+                    </div>
+                    <div>
+                        <div class="metric-number">12k+</div>
+                        <div class="metric-label">Active Organizations</div>
+                    </div>
+                    <div>
+                        <div class="metric-number">4.9/5</div>
+                        <div class="metric-label">Average Customer Rating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action (CTA) Banner Section -->
+        <section class="cta-section" id="cta">
+            <div class="container">
+                <div class="cta-banner">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to transform how your team works?</h2>
+                        <p class="cta-subtitle">
+                            Join thousands of high-performing teams already shipping faster with NexusFlow. Start your free 14-day trial today.
+                        </p>
+                        <div class="cta-buttons">
+                            <button type="button" class="btn btn-white" data-modal-title="Start Your Free 14-Day Trial">
+                                Get Started for Free
+                            </button>
+                            <button type="button" class="btn btn-outline-white" data-modal-title="Book a Live Demo">
+                                Schedule a Demo
+                            </button>
+                        </div>
+                        <p class="cta-note">No credit card required · Cancel anytime · Free onboarding included</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================================
+         3. Clean Semantic Footer
+         ====================================================================== -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div>
+                    <a href="#" class="brand-logo">
+                        <div class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <span>NexusFlow</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        The modern workspace designed to bring clarity, speed, and focus to ambitious product teams everywhere.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#metrics">Integrations</a></li>
+                        <li><a href="#cta">Pricing</a></li>
+                        <li><a href="#features">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#footer">About Us</a></li>
+                        <li><a href="#footer">Careers</a></li>
+                        <li><a href="#footer">Blog</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#footer">Privacy Policy</a></li>
+                        <li><a href="#footer">Terms of Service</a></li>
+                        <li><a href="#footer">Security</a></li>
+                        <li><a href="#footer">Cookie Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexusFlow Inc. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#footer" class="social-link" aria-label="Twitter">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                        </svg>
+                    </a>
+                    <a href="#footer" class="social-link" aria-label="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="#footer" class="social-link" aria-label="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         4. Interactive Sign-Up Modal & Toast Feedback
+         ====================================================================== -->
+    <div class="modal-backdrop" id="actionModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-card">
+            <button type="button" class="modal-close" id="closeModalBtn" aria-label="Close modal">&times;</button>
+            <h3 id="modalTitle" class="modal-title">Start Free Trial</h3>
+            <p class="modal-description">
+                Enter your work email below to get instant access to NexusFlow.
+            </p>
+            <form id="leadForm">
+                <div class="form-group">
+                    <label for="userName" class="form-label">Full Name</label>
+                    <input type="text" id="userName" class="form-input" placeholder="Alex Rivera" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail" class="form-label">Work Email</label>
+                    <input type="email" id="userEmail" class="form-input" placeholder="alex@company.com" required>
+                </div>
+                <button type="submit" class="btn btn-primary modal-submit">
+                    Continue
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toastNotification" role="status" aria-live="polite">
+        <span class="toast-icon">✓</span>
+        <span id="toastMessage">Welcome aboard! Check your inbox.</span>
+    </div>
+
+    <!-- ======================================================================
+         5. Interactive JavaScript (Mobile Nav, Sticky Header, Modal & Toast)
+         ====================================================================== -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
